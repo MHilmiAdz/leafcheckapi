@@ -43,7 +43,6 @@ def preprocess_image(file_path, target_size=(150, 150)):
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        clear_session() # type: ignore
         file = request.files.get('file')
         if not file or not allowed_file(file.filename):
             return jsonify({"error": "Invalid or missing file"}), 400
