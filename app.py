@@ -31,7 +31,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 def get_model():
     if "model" not in g:
-        g.model = load_model('api\model.h5')
+        g.model = load_model('model\model.h5')
     return g.model
 
 def allowed_file(filename):
