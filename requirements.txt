@@ -4,3 +4,4 @@ tensorflow
 numpy
 python-dotenv
 flask-cors
+gunicorn==22.0.0
