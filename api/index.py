@@ -103,7 +103,3 @@ def predict():
     except Exception as e:
         print(traceback.format_exc())  # Print full error traceback
         return {"error": "Internal Server Error"}
-
-# Run the Flask application
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, use_reloader=False, port='8000')
